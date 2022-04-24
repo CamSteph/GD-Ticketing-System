@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+root{
+    --primary-bg-color: rgb(218, 218, 218);
+    --secondary-bg-color: #66b2b2;
+    --primary-font-color: rgb(21, 21, 21);
+    --secondary-font-color: #f8f8ff;
+    --error-color: #ff6347;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+input{
+    min-height: 30px;
+    min-width: 65%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+/*LOGIN FORM*/
+
+.login-container{
+    background: #66b2b2;
+    min-height: 60vh;
+    width: 50vw;
+    min-width: 500px;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 0 20px -12px #000;
+    text-align: center;
+}
+
+.login-form{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    min-height: 40vh;
+    padding: 15px;
+    color: #f8f8ff;
+}
+
+.login-err-msg{
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 5px;
+    padding: 6px;
+    color: var(--secondary-font-color);
+    background: #ff6347;
+    visibility: hidden;
+}
+
+.login-btn{
+    padding: 5px 30px 5px 30px;
+    border: none;
+    border-radius: 6px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.login-btn:hover{
+    -webkit-transform: scale(.9);
+            transform: scale(.9);
+}
+
+/*SIGN UP FORM*/
+
+/*
+
+/*HOME PAGE STYLING*/
+
+.home-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: var(--secondary-font-color);
+}
+
+.home-container-header{
+    margin-bottom: 20px;
+}
+
+.ticket-list-section{
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    background: var(--secondary-bg-color);
+    padding-top: 260px;
+    border: 1px solid #66b2b2;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 75vh;
+    overflow-x:hidden; 
+    overflow-y:auto;
+}
+
+.ticket-row-container{
+    margin-top: 25px;
+    border-radius: 6px;
+    padding: 10px;
+    min-height: 90px;
+    max-height: 100px;
+    border-radius: 6px;
+    width: 100%;
+    min-width: 550px;
+    max-width: 600px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    overflow: hidden;
+}
+
+.ticket-row-container:hover{
+    box-shadow: 0 0 15px 0 #66b2b2;
+}
+
+.create-new-ticket-btn{
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 22px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.create-new-ticket-btn:hover{
+    -webkit-transform: scale(.9);
+            transform: scale(.9);
+}
+
+.ticket-row-name{
+    height: 65px;
+    width: 65px;
+    color: #f8f8ff;
+    border-radius: 50%;
+    background: #66b2b2;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.ticket-row-message-content{
+    white-space: nowrap;d
+    text-overflow: ellipsis;
+    max-width: 300px;
+    display: block;
+    overflow: hidden
+}
+
+.ticket-row-delete-msg-btn{
+    background: #ff6347;
+    color: #f8f8ff;
+    padding: 4px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    font-weight: 900;
+    margin-left: 8px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.ticket-row-delete-msg-btn:hover{
+    background: #c1361d;
+}
+
+.logout-btn{
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    border: none;
+    background: #849baa;
+    color: #f8f8ff;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.logout-btn:hover{
+    padding: 5px 25px 5px 25px;
+}
+
+/* CREATE TICKET PAGE */
+
+.create-ticket-container{
+    background: #66b2b2;
+    min-height: 60vh;
+    width: 50vw;
+    min-width: 500px;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 0 20px -12px #000;
+}
+
+.create-ticket-form{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    min-height: 40vh;
+}
+
+.create-ticket-form span{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.create-ticket-msg{
+    min-height: 80px;
+    width: 350px;
+    word-wrap: break-word;
+}
+
+.create-ticket-btn{
+    padding: 7px 19px 7px 19px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.category-select{
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 30px;
+}
+
+.ticket-page-container{
+    width: 100vw;
+    min-height: 90vh;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+}
+
+.ticket-content-section{
+    width: 60vw;
+    min-height: 50vh;
+    max-height: 70vh;
+    padding: 15px;
+    box-shadow: 0 0 15px -3px #66b2b2;
+    border-radius: 6px;
+    overflow-x:hidden; 
+    overflow-y:auto;
+}
+
+.ticket-msg-container{
+    min-height: 35px;
+    margin-top: 7px;
+    background: #d3d3d3;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.analyst-msg{
+    background: #aaf0d1;
+}
+
+.send-form{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+
+.send-btn{
+    padding: 7px 16px 7px 16px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 17px;
+    -webkit-transition: all .5 ease;
+    transition: all .5 ease;
+    background: #66b2b2;
+}
+
+.send-btn:hover{
+    -webkit-transform: scale(.9);
+            transform: scale(.9);
+}
+
+.canned-response-section{
+    margin-top: 20px;
+}
+
+	
