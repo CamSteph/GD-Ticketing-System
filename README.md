@@ -11,11 +11,11 @@ To save those of you who will actually view this project the hassle, I built thi
 
 If you want to run the project locally, then you can do the following:
 
-1.) Upload site's code to your root
-2.) Create a MySql DB named 'gd_ticketing_db'
-3.) Create a table named 'users' with the fields of 'id', 'username', 'password', 'role', and 'unique_id_val'
-4.) Create a table named 'messages' with the fields of 'id', 'category', 'msg_content', 'unique_user_id', 'unique_ticket_id', 'last_edit_time', 'sender'
-5.) Run the application by pathing to the root directory.
+- Upload site's code to your root
+- Create a MySql DB named 'gd_ticketing_db'
+- Create a table named 'users' with the fields of 'id', 'username', 'password', 'role', and 'unique_id_val'
+- Create a table named 'messages' with the fields of 'id', 'category', 'msg_content', 'unique_user_id', 'unique_ticket_id', 'last_edit_time', 'sender'
+- Run the application by pathing to the root directory.
 ------------------------------------
 
 ## HOW TO USE THE PROJECT:
