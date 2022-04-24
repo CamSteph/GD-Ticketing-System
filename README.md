@@ -10,7 +10,7 @@ To save those of you who will actually view this project the hassle, I temporari
 If you want to run the project locally, then you can do the following:
 
 - Upload site's code to your root
-- Create a MySql DB named 'gd_ticketing_db'
+- Create a MySql DB named 'gd_ticketing_db', username 'gd-ticketing', password 'gd-ticketing-123', host 'localhost' OR you can change the connection strings in the db file :)
 - Create a table named 'users' with the fields of 'id', 'username', 'password', 'role', and 'unique_id_val'
 - Create a table named 'messages' with the fields of 'id', 'category', 'msg_content', 'unique_user_id', 'unique_ticket_id', 'last_edit_time', 'sender'
 - Run the application by pathing to the root directory.
