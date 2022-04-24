@@ -1,7 +1,7 @@
 # GD TICKETING SYSTEM
 
 ## DESCRIPTION:
-This is a GD Ticketing System application that mimics the basic functionality of a ticketing system. I created the application with a LAMP stack. I decided to use this stack due to familiarity and I believe it provides the necessary capabilities for the project. There is also Javascript incorporated in the project. For example, the sign up and log in forms are validated on the client with JavaScript. Also for transparency, the main issue I faced while creating this application is ordering the MySQL queries for the home page to display the most recent message on refresh. 
+This is a GD Ticketing System application that mimics the basic functionality of a ticketing system. I created the application with a LAMP stack. I decided to use this stack due to familiarity and I believe it provides the necessary capabilities for the project. There is also Javascript incorporated in the project. For example, the sign up and log in forms are validated on the client with JavaScript. Also for transparency, the main issue I faced while creating this application is ordering the MySQL queries for the home page to display the most recent message on refresh. Also, Unit Testing I wasn't able to successfully incorporate in a practical manner, however, I manually tested the application.
 
 ## HOW TO INSTALL/RUN PROJECT:
 
