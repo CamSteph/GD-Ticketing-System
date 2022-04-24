@@ -37,5 +37,5 @@ Both analysts and customers can log out of their accounts, which will redirect b
 
 ## CREDITS
 
-Created by: Cameron R. Stephenson
+Created by: Cameron R. Stephenson\n
 Inspired by: Sucuri Team :)
