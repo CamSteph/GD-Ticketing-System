@@ -1,9 +1,9 @@
 #GD TICKETING SYSTEM
 
 ## DESCRIPTION:
-------------------------------------
+------------------------------------/
 This is a GD Ticketing System application that mimics that basic functionality of a ticketing system. I created the application with a LAMP stack. I decided to use this stack due to famliarity and I believe it provides the necessary capabilities without all the unecessary bells and whistles. There is also Javascript incorporated in the project. For example, the sign up and log in form are validated on the client with JavaScript. For transparency, the main issue I faced while creating this application is ordering the MySQL queries for the home page to display the most recent message on refresh. 
-------------------------------------
+------------------------------------/
 
 ## HOW TO INSTALL/RUN PROJECT:
 ------------------------------------
@@ -38,7 +38,7 @@ Both analysts and customers can log out of their accounts, which will redirect b
 ------------------------------------
 
 ## CREDITS
-------------------------------------
+------------------------------------/
 Created by: Cameron R. Stephenson
 Inspired by: Sucuri Team :)
-------------------------------------
+------------------------------------/
